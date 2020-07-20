@@ -361,6 +361,12 @@ body footer .footer-menu .container-fluid .menu-icon .list-group .list-group-ite
   }
 }
 
+@media screen and (max-width: 992px) {
+  body main .cards .container .row .box-list {
+    min-width: 50%;
+  }
+}
+
 @media screen and (max-width: 1011px) {
   body header .nav-menu .navbar {
     overflow-x: hidden;

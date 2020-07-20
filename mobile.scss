@@ -108,6 +108,23 @@
         }
     }
 }
+@mixin lessThan992{
+    @media screen and (max-width:992px){
+        body{
+            main{
+                .cards{
+                    .container{
+                        .row{
+                            .box-list{
+                                min-width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @mixin lessThan980 {
     @media screen and (max-width: 1011px) {
         body {

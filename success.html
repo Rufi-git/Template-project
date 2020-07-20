@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="success.css">
+    <script src="https://kit.fontawesome.com/48dfdf8efd.js" crossorigin="anonymous"></script>
+    <script>
+        let login = sessionStorage.getItem("logined");
+        if (login == null || login == undefined) {
+            document.location.href = "login.html";
+        };
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="userInfo"><b><em>USER INFO</em></b></h1>
+        <div class="about-user">
+            <h1>Welcome dear <i id="userName"></i> - My email is <em id="userEmail"></em></h1>
+            <div class="name">
+                <i class="fas fa-user"></i>
+                <h3 id="showN">Name:</h3>
+            </div>
+            <div class="surname">
+                <h3 id="showS">Surname:</h3>
+            </div>
+            <div class="age">
+               <h3 id="showA">Age:</h3> 
+            </div>
+            <div class="email">
+                <i class="fas fa-envelope"></i>
+                <h3 id="showE">Email:</h3>
+            </div>
+        </div>
+     
+        
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let userInfo = JSON.parse(sessionStorage.userInfo)
+            document.getElementById("userName").innerHTML = userInfo.userName;
+            document.getElementById("userEmail").innerHTML = userInfo.userEmail;
+            document.getElementById("showN").innerText += userInfo.userName;
+            document.getElementById("showS").innerText += userInfo.userSurname;
+            document.getElementById("showA").innerText += userInfo.userAge;
+            document.getElementById("showE").innerText += userInfo.userEmail;
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../navbar/images/vintage-ornamental-flowers-background_52683-28040.jpg);
+  font-family: "Poppins", sans-serif;
+}
+
+body .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #5d4954;
+}
+
+body .container h3 {
+  overflow: hidden;
+  width: 100%;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 10px 0;
+  border-bottom: 1px solid #5d4954;
+}
+
+body .container h1 #userName, body .container h1 #userEmail {
+  color: #b9a9a9;
+  font-size: 40px;
+}
+
+body .container .userInfo {
+  text-align: center;
+  -webkit-transform: translate(-70px, -100%);
+          transform: translate(-70px, -100%);
+  font-size: 4em;
+  padding: 13px 0;
+  border-bottom: 6px solid #5d4954;
+  width: 1300px;
+}
+
+body .container .about-user {
+  border: 4px solid #5d4954;
+  width: 1300px;
+  -webkit-transform: translateX(-70px);
+          transform: translateX(-70px);
+  padding: 40px;
+}
+
+body .container .about-user div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .about-user h3 {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=success.css.map */

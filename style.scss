@@ -1,0 +1,243 @@
+@import "variables", "mobile";
+body {
+    background: url(../REAL-TEMPLATE/images/vintage-ornamental-flowers-background_52683-28040.jpg);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    header {
+        .nav-menu {
+            .navbar {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                min-height: 8vh;
+                background: $navColor;
+                .logo {
+                    z-index: 1;
+                    img {
+                        width: 8em;
+                        transform: translateY(-25%);
+                        cursor: pointer;
+                    }
+                }
+
+                .list-group {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 50%;
+                    .list-group-item {
+                        background: none;
+                        border: none;
+                        a {
+                            text-decoration: none;
+                            color: $textColor;
+                            letter-spacing: 3px;
+                            font-weight: bold;
+                            font-size: 14px;
+                        }
+                    }
+                    .panels {
+                        display: none;
+                        .list-group-item {
+                            transition: all 0.5s;
+                        }
+                        .list-group-item:hover {
+                            background: $textColor;
+                            a {
+                                color: $navColor;
+                            }
+                        }
+                    }
+                }
+
+                .burger {
+                    display: none;
+                    div {
+                        width: 25px;
+                        height: 3px;
+                        background-color: $textColor;
+                        margin: 5px;
+                    }
+                }
+                .panel {
+                    a {
+                        text-decoration: none;
+                        color: $textColor;
+                        font-size: 14px;
+                        font-weight: bold;
+                        letter-spacing: 3px;
+                        border: 2px solid $textColor;
+                        margin-left: 20px;
+                        padding: 10px 20px;
+                        transition: all 0.5s;
+                    }
+                    a:hover {
+                        background: $textColor;
+                        color: $navColor;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        margin-top: 5%;
+        .about-us {
+            .container-fluid {
+                display: flex;
+                align-items: center;
+                .about-site {
+                    text-align: center;
+                    margin-right: 40px;
+                    color: $navColor;
+                    h1 {
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                    h1::selection {
+                        background-color: $navColor;
+                        color: $textColor;
+                    }
+                    p {
+                        em::selection {
+                            background-color: $navColor;
+                            color: $textColor;
+                        }
+                    }
+                }
+            }
+        }
+        .site-collapse {
+            margin-top: 5%;
+            .container-fluid {
+                display: flex;
+                .site-accordion {
+                    margin-left: 40px;
+                    .accordion {
+                        .card {
+                            color: $navColor;
+                            .card-header {
+                                transition: all 0.5s;
+                                border: 2px solid $navColor;
+                                button {
+                                    color: $navColor;
+                                }
+                            }
+                            .card-header:hover {
+                                background-color: $navColor;
+                                button {
+                                    color: $textColor;
+                                }
+                            }
+                            .show {
+                                border: 2px solid $navColor;
+                                .card-body::selection {
+                                    background-color: $navColor;
+                                    color: $textColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cards {
+            .container {
+                .row {
+                    .box-list {
+                        overflow: hidden;
+                        .box-content {
+                            transform: translateY(-50%) scale(0);
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            transition: all 0.4s linear;
+                        }
+                        .box-content::selection {
+                            background-color: $textColor;
+                            color: $navColor;
+                        }
+                    }
+                    .box-list::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                        $navColor: rgb(114, 105, 110);
+                        background: $navColor;
+                        transition: all 0.4s linear;
+                    }
+                    .box-list:hover::before {
+                        opacity: 1;
+                    }
+                    .box-list:hover img {
+                        opacity: 0;
+                        transform: scale(3);
+                    }
+                    .box-list:hover .box-content {
+                        transform: translateY(-50%) scale(1);
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        margin-top: 5%;
+        .footer-menu {
+            display: flex;
+            align-items: center;
+            background: $navColor;
+            height: 72px;
+            .container-fluid {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                .logo{
+                    transform: translateY(-25%);
+                    img{
+                        width: 8em;
+                        cursor: pointer;
+                    }
+                }
+                .menu-list {
+                    .list-group {
+                        .list-group-item {
+                            background: none;
+                            border: none;
+                            a{
+                                color: $textColor;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                .menu-icon{
+                    .list-group{
+                        .list-group-item{
+                            background: none;
+                            border: none;
+                            a{
+                                color: $textColor;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Mobile version//
+@include lessThan1400;
+@include lessThan1250;
+@include lessThan1200;
+@include lessThan1024;
+@include lessThan990GreatThan768;
+@include lessThan980;
+@include lessThan730;
+@include lessThan600;
+@include lessThan500;

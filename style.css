@@ -415,6 +415,7 @@ body footer .footer-menu .container-fluid .menu-icon .list-group .list-group-ite
   }
   body header .nav-menu .navbar .burger {
     display: block;
+    z-index: 1;
     cursor: pointer;
   }
   body header .nav-menu .navbar .burger div {

@@ -162,6 +162,7 @@
                         }
                         .burger {
                             display: block;
+                            z-index: 1;
                             cursor: pointer;
                             div {
                                 transition: all 0.3s ease;

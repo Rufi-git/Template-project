@@ -23,6 +23,7 @@ body {
                 }
 
                 .list-group {
+                    z-index: 1;
                     display: flex;
                     justify-content: space-around;
                     width: 50%;
@@ -196,6 +197,7 @@ body {
                 align-items: center;
                 justify-content: space-around;
                 .logo{
+                    z-index: 2;
                     transform: translateY(-25%);
                     img{
                         width: 8em;

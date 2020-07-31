@@ -32,6 +32,7 @@ body header .nav-menu .navbar .logo img {
 }
 
 body header .nav-menu .navbar .list-group {
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,6 +273,7 @@ body footer .footer-menu .container-fluid {
 }
 
 body footer .footer-menu .container-fluid .logo {
+  z-index: 2;
   -webkit-transform: translateY(-25%);
           transform: translateY(-25%);
 }

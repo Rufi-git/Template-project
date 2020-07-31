@@ -86,4 +86,9 @@ body .register-box form .btn {
   cursor: pointer;
   margin: 12px 0;
 }
+
+body .register-box form input:hover, body .register-box form a:hover {
+  color: #e2e2e2;
+  background-color: #5d4954;
+}
 /*# sourceMappingURL=login.css.map */

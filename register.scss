@@ -60,9 +60,11 @@ body {
             margin: 12px 0;
         }
         form{
-            input:hover,a:hover{
-                color:$textColor;
-                background-color: $navColor;
+            .button-panel{
+                input:hover,a:hover{
+                    color:$textColor;
+                    background-color: $navColor;
+                }
             }
         }
     }

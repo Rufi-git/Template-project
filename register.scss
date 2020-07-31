@@ -47,7 +47,6 @@ body {
                 $textColor:rgb(151, 148, 148);
                 color:$textColor
             }
-            
         }
         .btn{
             width: 100%;
@@ -59,6 +58,12 @@ body {
             font-size: 18px;
             cursor: pointer;
             margin: 12px 0;
+        }
+        form{
+            input:hover,a:hover{
+                color:$textColor;
+                background-color: $navColor;
+            }
         }
     }
 }

@@ -52,6 +52,18 @@ body header .nav-menu .navbar .list-group .list-group-item a {
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 14px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+body header .nav-menu .navbar .list-group .active {
+  background-color: #e2e2e2;
+}
+
+body header .nav-menu .navbar .list-group .active a {
+  color: #5d4954;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 body header .nav-menu .navbar .list-group .panels {

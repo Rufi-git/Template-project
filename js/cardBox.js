@@ -1,3 +1,5 @@
+"use strict";
+
 let cardManager = {
     getAllCards: function () {
         return cards

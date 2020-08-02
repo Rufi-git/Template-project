@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="success.css">
     <script src="https://kit.fontawesome.com/48dfdf8efd.js" crossorigin="anonymous"></script>
     <script>
+        "use strict";
+
         let login = sessionStorage.getItem("logined");
         if (login == null || login == undefined) {
             document.location.href = "login.html";
@@ -31,18 +33,20 @@
                 <h3 id="showS">Surname:</h3>
             </div>
             <div class="age">
-               <h3 id="showA">Age:</h3> 
+                <h3 id="showA">Age:</h3>
             </div>
             <div class="email">
                 <i class="fas fa-envelope"></i>
                 <h3 id="showE">Email:</h3>
             </div>
         </div>
-     
-        
+
+
     </div>
 
     <script>
+        "use strict";
+
         document.addEventListener("DOMContentLoaded", function () {
             let userInfo = JSON.parse(sessionStorage.userInfo)
             document.getElementById("userName").innerHTML = userInfo.userName;

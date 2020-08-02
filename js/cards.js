@@ -1,3 +1,5 @@
+"use strict";
+
 let cards = [
     {
         photo: "Tajmahal.png",

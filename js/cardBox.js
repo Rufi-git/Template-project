@@ -1,11 +1,10 @@
-"use strict";
 
+"use strict";
 let cardManager = {
     getAllCards: function () {
-        return cards
+        return readCards.getFullCard()
     }
 };
-
 let domManger = {
     createCardContainer: function (product) {
         let mainBox = document.createElement("div");

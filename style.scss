@@ -121,7 +121,7 @@ body {
             margin-top: 5%;
             .container-fluid {
                 display: flex;
-                .site-accordion {
+                .colappsable-site {
                     margin-left: 40px;
                     .accordion {
                         .card {
@@ -146,6 +146,18 @@ body {
                                     color: $textColor;
                                 }
                             }
+                        }
+                    }
+                    .site-date{
+                        margin-top:20px;
+                        #clickToLearn{
+                            background: $navColor;
+                            color:$textColor;
+                            margin-bottom: 10px;
+                        }
+                        #learnDate{
+                            color:$navColor;
+                            display:none;
                         }
                     }
                 }

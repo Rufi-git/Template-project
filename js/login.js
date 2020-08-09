@@ -7,7 +7,7 @@ class Person {
     }
 }
 function getInputValue(identifikator) {
-    return document.getElementById(identifikator).value;
+    return $(identifikator).val();
 }
 function findUser(inArray,checkedUser){
     let found = false;
@@ -25,12 +25,12 @@ function findUser(inArray,checkedUser){
     };
     return found;
 }
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("login").addEventListener("click", function (event) {
+$(document).ready(function () {
+    $("#login").on("click", function (event) {
         event.preventDefault();
 
-        let email = getInputValue("email");
-        let password = getInputValue("password");
+        let email = getInputValue("#email");
+        let password = getInputValue("#password");
 
         let person = new Person(email, password);
         if ("users" in sessionStorage) {

@@ -166,44 +166,59 @@ body main .site-collapse .container-fluid {
   display: flex;
 }
 
-body main .site-collapse .container-fluid .site-accordion {
+body main .site-collapse .container-fluid .colappsable-site {
   margin-left: 40px;
 }
 
-body main .site-collapse .container-fluid .site-accordion .accordion .card {
+body main .site-collapse .container-fluid .colappsable-site .accordion .card {
   color: #5d4954;
 }
 
-body main .site-collapse .container-fluid .site-accordion .accordion .card .card-header {
+body main .site-collapse .container-fluid .colappsable-site .accordion .card .card-header {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   border: 2px solid #5d4954;
 }
 
-body main .site-collapse .container-fluid .site-accordion .accordion .card .card-header button {
+body main .site-collapse .container-fluid .colappsable-site .accordion .card .card-header button {
   color: #5d4954;
 }
 
-body main .site-collapse .container-fluid .site-accordion .accordion .card .card-header:hover {
+body main .site-collapse .container-fluid .colappsable-site .accordion .card .card-header:hover {
   background-color: #5d4954;
 }
 
-body main .site-collapse .container-fluid .site-accordion .accordion .card .card-header:hover button {
+body main .site-collapse .container-fluid .colappsable-site .accordion .card .card-header:hover button {
   color: #e2e2e2;
 }
 
-body main .site-collapse .container-fluid .site-accordion .accordion .card .show {
+body main .site-collapse .container-fluid .colappsable-site .accordion .card .show {
   border: 2px solid #5d4954;
 }
 
-body main .site-collapse .container-fluid .site-accordion .accordion .card .show .card-body::-moz-selection {
+body main .site-collapse .container-fluid .colappsable-site .accordion .card .show .card-body::-moz-selection {
   background-color: #5d4954;
   color: #e2e2e2;
 }
 
-body main .site-collapse .container-fluid .site-accordion .accordion .card .show .card-body::selection {
+body main .site-collapse .container-fluid .colappsable-site .accordion .card .show .card-body::selection {
   background-color: #5d4954;
   color: #e2e2e2;
+}
+
+body main .site-collapse .container-fluid .colappsable-site .site-date {
+  margin-top: 20px;
+}
+
+body main .site-collapse .container-fluid .colappsable-site .site-date #clickToLearn {
+  background: #5d4954;
+  color: #e2e2e2;
+  margin-bottom: 10px;
+}
+
+body main .site-collapse .container-fluid .colappsable-site .site-date #learnDate {
+  color: #5d4954;
+  display: none;
 }
 
 body main .cards .container .row .box-list {

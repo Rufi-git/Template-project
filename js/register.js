@@ -11,18 +11,18 @@ class Person {
 };
 
 function getInputValue(identifikator){
-    return document.getElementById(identifikator).value;
+    return $(identifikator).val();
 
 }
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("register").addEventListener("click", function (event) {
+$(document).ready(function () {
+    $("#register").on("click", function (event) {
         event.preventDefault();
 
-        let userName = getInputValue("userName");
-        let userSurname = getInputValue("userSurname");
-        let userAge = getInputValue("userAge");
-        let userEmail =  getInputValue("userEmail");
-        let userPassword =  getInputValue("userPassword");
+        let userName = getInputValue("#userName");
+        let userSurname = getInputValue("#userSurname");
+        let userAge = getInputValue("#userAge");
+        let userEmail =  getInputValue("#userEmail");
+        let userPassword =  getInputValue("#userPassword");
 
         let person = new Person(userName, userSurname, userAge, userEmail, userPassword);
         let success = false;

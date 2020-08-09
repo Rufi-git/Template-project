@@ -48,15 +48,15 @@
     <script>
         "use strict";
 
-        document.addEventListener("DOMContentLoaded", function () {
+        $(document).ready(function () {
             let userInfo = JSON.parse(sessionStorage.userInfo)
-            document.getElementById("userName").innerHTML = userInfo.userName;
-            document.getElementById("userEmail").innerHTML = userInfo.userEmail;
-            document.getElementById("showN").innerText += userInfo.userName;
-            document.getElementById("showS").innerText += userInfo.userSurname;
-            document.getElementById("showA").innerText += userInfo.userAge;
-            document.getElementById("showE").innerText += userInfo.userEmail;
-        })
+            $("#userName").html(userInfo.userName);
+            $("#userEmail").html(userInfo.userEmail);
+            $("#showN").append(userInfo.userName);
+            $("#showS").append(userInfo.userSurname);
+            $("#showA").append(userInfo.userAge);
+            $("#showE").append(userInfo.userEmail);
+        });
     </script>
 </body>
 
